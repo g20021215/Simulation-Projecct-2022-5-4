@@ -6,7 +6,8 @@ Group memebers:
 
 Date:2022/5/4
 ## Part a
-
+### Method 1:
+### Method 2:
 
 ## Part b
 
