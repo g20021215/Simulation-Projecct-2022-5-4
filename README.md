@@ -1,4 +1,4 @@
-# Simulation Projecct: 
+# Simulation Project: 
 # Question 2: Simulation on A Queuing System with Two Parallel
 Group memebers:
 陈俊霖（2030005004）  陈郅涵（2030005013） 李文锐（2030005036） 施金泽（2030005049） 
