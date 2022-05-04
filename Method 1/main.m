@@ -1,4 +1,4 @@
-%%%%[Result_matrix,m,E,S] = me_code2(10000);
+[Result_matrix,m,E,S] = me_code2(10000);
 me = mean(S);
 sd = sqrt(var(S));
 
