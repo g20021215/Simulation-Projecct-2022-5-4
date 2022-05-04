@@ -10,7 +10,7 @@ Date:2022/5/4
 ## Part a
 ### Method 1:
 ### Method 2:Queueing Theory
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/tree/main/Photos/Cashier1.png)
 
 ## Part b
 
