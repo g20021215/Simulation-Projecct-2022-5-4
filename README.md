@@ -26,21 +26,12 @@ Date:2022/5/4
   #### Testing for the distribution
   ## Relevant material
 
+<br> 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<br />
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
 
