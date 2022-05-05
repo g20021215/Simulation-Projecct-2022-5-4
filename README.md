@@ -3,7 +3,9 @@
 Group memebers:
 陈俊霖（2030005004）  陈郅涵（2030005013） 李文锐（2030005036） 施金泽（2030005049） 
 王一安（2030005058）叶中宇（2030005069）  邹宜轩（2030005079）
+
 Date:2022/5/4
+
 <br>
 
 
@@ -43,15 +45,14 @@ Date:2022/5/4
 
 <br />
 
-
-
-
-
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
 
 ## Method 1: Ordinary Method
 ### Part a (Method 1)
+In this method, we will use the <b> Queueing System with Two Parallel Servers </b> to solve this problem.
+First, we need to generate the arrive time <font color=Blue> ta </font>   <font color="Blue">Test</font>   
+<span style=background:#FF0000>Test</span>
 #### Algorithm
 
 #### Code:
