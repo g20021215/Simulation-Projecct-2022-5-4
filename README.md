@@ -234,37 +234,36 @@ for i = 1:2
     Total_time = 2;
     %maximum length of queuing
     N = 10000000000;
-    %rate of arrival and service到达率与服务率
+    %rate of arrival and service
     lambda = 60;
     mu = 60;
-    %average arrive time poing and the average serve time平均到达时间与平均服务时间
+    %average arrive time poing and the average serve time
     arr_mean = 1/lambda;
     ser_mean = 1/mu;
     arr_num = length(pois(Total_time,lambda));
     %arr_num = round(Total_time*lambda*1);
     events = [];
-    %generate the time interval between any two adjecent customers产生各顾客达到时间间隔
+    %generate the time interval between any two adjecent customers
     events(1,:) = exprnd(arr_mean,1,arr_num); + normrnd(8/60,2/60,arr_num,1);
-    %the accumulated sum of all the previous time interval is the time point when the customer arrive
-    %各顾客的到达时刻等于时间间隔的累积和 （到达时间）
+    %the accumulated sum of all the previous time interval is equal to the time point when the customer arrive
     events(1,:) = cumsum(events(1,:));
-    %sojorn time for all the customers. 产生各顾客服务时间(停留时间）
+    %Generate serve time for all the customers. 
     events(2,:) = exprnd(ser_mean,1,arr_num);
-    %calculate the total number of all the customer. This is same as the number of cumstomers arrive in the simulated interval计算仿真顾客个数，即到达时刻在仿真时间内的顾客数
+    %calculate the total number of all the customer. This is same as the number of cumstomers arrive in the simulated interval
     len_sim = sum(events(1,:)<= Total_time);
     %*****************************************
-    %record the information of the first customer 计算第 1个顾客的信息
+    %record the information of the first customer 
     %*****************************************
-    %no waiting time for the first customer.第 1个顾客进入系统后直接接受服务，无需等待
+    %no waiting time for the first customer.
     events(3,1) = 0;
-    %its leaving time is equal to the sum of the 其离开时刻等于其到达时刻与服务时间之和
+    %its leaving time is equal to the sum of the arrival time and the serve time.
     events(4,1) = events(1,1)+events(2,1);
-    %The first customer was taken in, and the total number of people in the system is 1.其肯定被系统接纳，此时系统内共有1个顾客，故标志位置1
+    %The first customer was taken in, and the total number of people in the system is 1.
     events(5,1) = 1;
-    %we number this customer to be 1.其进入系统后，系统内已有成员序号为 1
+    %we number this customer to be 1.
     member = [1];
     for i = 2:arr_num
-        %If i^th customer arrive time is geq than the sumulated time, then break.如果第 i个顾客的到达时间超过了仿真时间，则跳出循环
+        %If i^th customer arrive time is geq than the sumulated time, then break.
         
         if events(1,i)>Total_time
             
@@ -272,29 +271,29 @@ for i = 1:2
             
         else
             number = sum(events(4,member) > events(1,i));
-            %If the cashier system is full, then reject ith customer, and mark it to be zero如果系统已满，则系统拒绝第 i个顾客，其标志位置 0
+            %If the cashier system is full, then reject ith customer, and mark it to be zero.
             if number >= N+1
                 events(5,i) = 0;
-                %如果系统为空，则第 i个顾客直接接受服务
+                %If the system is empty, then the ith customer will directly be served.
             else
                 if number == 0
-                    %其等待时间为 0
+                    %The waiting time is zero.
                     
                     %PROGRAMLANGUAGEPROGRAMLANGUAGE
                     events(3,i) = 0;
-                    %其离开时刻等于到达时刻与服务时间之和
+                    %Time point of departure is equal to the sum of arrival time point and the serve time.
                     events(4,i) = events(1,i)+events(2,i);
-                    %其标志位置 1
+                    %Mark the number to be 0.
                     events(5,i) = 1;
                     member = [member,i];
-                    %如果系统有顾客正在接受服务，且系统等待队列未满，则第i个顾客进入系统
+                    %If there are customers are being served, and the system doesn't filled, then the ith customer will enter the system.
                     
                 else len_mem = length(member);
-                    %其等待时间等于队列中前一个顾客的离开时刻减去其到达时刻
+                    %The waiting time is equal to the last customer leaving time point minus its arrival time point.
                     events(3,i)=events(4,member(len_mem))-events(1,i);
-                    %其离开时刻等于队列中前一个顾客的离开时刻加上其服务时间
+                    %The leaving time point is equal to the last customer leaving time minus its serve time.
                     events(4,i)=events(4,member(len_mem))+events(2,i);
-                    %标识位表示其进入系统后，系统内共有的顾客数
+                    %when the mark number enter the system, the total number in this system. 
                     events(5,i) = number+1;
                     member = [member,i];
                 end
@@ -302,15 +301,15 @@ for i = 1:2
             
         end
     end
-    %仿真结束时，进入系统的总顾客数
+    %When the simulation process end, the total number of have already entered the system
     len_mem = length(member);
     %*****************************************
-    %输出结果
+    %Output the result.
     %*****************************************
     figure;
     subplot(2,1,1);
-    %绘制在仿真时间内，进入系统的所有顾客的到达时刻和离
-    %开时刻曲线图（stairs：绘制二维阶梯图）
+    % Draw the line chart of the time point when customer entering and leaving during the simulation period. 
+    % (stairs：Draw the two dimension ladder diagram）
     stairs([0 events(1,member)],0:len_mem);
     hold on;
     stairs([0 events(4,member)],0:len_mem,'.-r');
@@ -318,8 +317,8 @@ for i = 1:2
     title("Arriving - Leaving");
     hold off;
     grid on;
-    %绘制在仿真时间内，进入系统的所有顾客的停留时间和等
-    %待时间曲线图（plot：绘制二维线性图）
+    %Draw the plot of the time sojurn time and waiting time during the simulation period.
+    %（plot：two dimension linear plot）
     subplot(2,1,2);
     plot(1:len_mem,events(3,member),'r-*',1: len_mem,events(2,member)+events(3,member),'k-');
     legend('Waiting time','Service time');
