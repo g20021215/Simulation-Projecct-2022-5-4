@@ -3,14 +3,36 @@
 Group memebers:
 陈俊霖（2030005004）  陈郅涵（2030005013） 李文锐（2030005036） 施金泽（2030005049） 
 王一安（2030005058）叶中宇（2030005069）  邹宜轩（2030005079）
-
 Date:2022/5/4
-## Introduction：
-  In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem
 
-## Method 1:
-### Part a
-#### Idea discription:
+# Content:
+  ## Introduction
+  ## Method 1: ordinary method
+  ### Part a (Method 1)
+  #### Algorithm
+  #### Code
+  
+  ### Part b (Method 1)
+  #### Flow diagram
+  #### Testing for the distribution
+  
+  
+  ## Method 2: Queueing theorem
+  ### Part a & b (Method 2)
+  #### Algorithm
+  #### Code
+  #### Simulation result:
+  #### Flow diagram
+  #### Testing for the distribution
+  ## Relevant material
+
+
+## Introduction：
+  In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
+
+## Method 1: Ordinary Method
+### Part a (Method 1)
+#### Algorithm
 
 #### Code:
 `my_code2.m`
@@ -150,13 +172,17 @@ pd = makedist('Exponential');
 qqplot(S,pd);
 ```
 
-### Part b:
+### Part b (Method 1)
+#### Flow diagram
+#### Testing for the distribution
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQ%20plot%20Method1%20.png)
 
-## Method 2:Queueing Theory
-### Algorithm：
+## Method 2: Queueing theorem
+### Part a & b (Method 2)
 
-### Code:
+#### Algorithm
+# 还没陈郅涵发我
+#### Code
 pois.m
 ```matlab
 function [S,I] = pois(T,lambda)
@@ -278,13 +304,14 @@ for i = 1:2
 end
 ```
 
-### Result:
+#### Simulation result:
 
 
 Cashier1： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Cashier1.png)
 
 Cashier2： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Cashier2.png)
-
+#### Flow diagram
+#### Testing for the distribution
 
 
 
