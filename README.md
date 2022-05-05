@@ -7,8 +7,9 @@ Group memebers:
 Date:2022/5/4
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem
-## Part a
-### Method 1:
+
+## Method 1:
+### Part a
 #### Idea discription:
 
 #### Code:
@@ -148,13 +149,14 @@ pd = makedist('Exponential');
 %pd = makedist('Normal')
 qqplot(S,pd);
 ```
+
+### Part b:
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQ%20plot%20Method1%20.png)
-## Part b:
 
-### Method 2:Queueing Theory
-#### Algorithm：
+## Method 2:Queueing Theory
+### Algorithm：
 
-#### Code:
+### Code:
 pois.m
 ```matlab
 function [S,I] = pois(T,lambda)
@@ -276,7 +278,7 @@ for i = 1:2
 end
 ```
 
-#### Result:
+### Result:
 
 
 Cashier1： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Cashier1.png)
