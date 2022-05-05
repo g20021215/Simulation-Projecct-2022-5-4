@@ -21,9 +21,9 @@ Date:2022/5/4
 #### Code:
 
 #### Result:
-Cashier1： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/tree/main/Photos/Cashier1.png)
+Cashier1： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Cashier1.png)
 
-Cashier2： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/tree/main/Photos/Cashier2.png)
+Cashier2： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Cashier2.png)
 
 
 
