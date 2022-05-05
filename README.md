@@ -9,12 +9,22 @@ Date:2022/5/4
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem
 ## Part a
 ### Method 1:
+#### Idea discription:
+
+#### Code:
+
+## Part b:
+
 ### Method 2:Queueing Theory
+#### Algorithm：
+
+#### Code:
+
+#### Result:
 Cashier1： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/tree/main/Photos/Cashier1.png)
 
 Cashier2： ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/tree/main/Photos/Cashier2.png)
 
-## Part b
 
 
 
