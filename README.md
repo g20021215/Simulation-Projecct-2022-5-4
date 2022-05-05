@@ -27,6 +27,20 @@ Date:2022/5/4
   ## Relevant material
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
 
@@ -181,7 +195,7 @@ qqplot(S,pd);
 ### Part a & b (Method 2)
 
 #### Algorithm
-# 还没陈郅涵发我
+# 陈郅涵还没发我
 #### Code
 pois.m
 ```matlab
