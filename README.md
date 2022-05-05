@@ -173,7 +173,6 @@ for j=1:N
     i_matrix(j) = n;
 %% Part b
      Set = Result_matrix(:,4);
-     Set(all(~Set,2),:) = [];% Delete all the zero items here
      S = [S;Set];
      Set = [];
 
