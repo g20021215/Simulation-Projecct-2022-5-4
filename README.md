@@ -38,7 +38,7 @@ for j=1:N
     
     
     
-    n=length(ta);%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Here I change n to length(ta),previous is length(ta)-1
+    n=length(ta);%%%%%%%Here I change n to length(ta),previous is length(ta)-1
     tc=zeros(n:1);
     for i =1:n
         a = normrnd(mu,std);
@@ -121,9 +121,9 @@ for j=1:N
     end
     Result_matrix(all(~Result_matrix,2),:) = [];
     Result_matrix;
-%% Part a (b)按照2~4列求和（暂定）：需要问杜老师
+%% Part a (b)
     % get the mean of every times in every iteration:
-    E_times(j) = sum(sum(Result_matrix(:,2:4)))/n;
+    E_times(j) = sum(sum(Result_matrix(:,2:3)))/n;
     i_matrix(j) = n;
 %% Part b
     Set = Result_matrix(:,4);
