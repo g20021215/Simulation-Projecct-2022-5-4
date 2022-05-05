@@ -272,11 +272,8 @@ for i = 1:2
     title("Waiting - Service");
     grid on;
 end
-
-
-
-
 ```
+
 #### Result:
 
 
