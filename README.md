@@ -12,8 +12,9 @@ Date:2022/5/4
 #### Idea discription:
 
 #### Code:
+`my_code2.m`
 ```matlab
-function [Result_matrix,m,E,S] = me_code2(N)
+function [Result_matrix,m,E,S] = my_code2(N)
 % m is the average number of people in each iterations.
 % Result_matrix is the simulated result in every iteration.
 i_matrix = zeros(1,N);
@@ -139,7 +140,7 @@ end
 
 main.m
 ```matlab
-[Result_matrix,m,E,S] = me_code2(10000);
+[Result_matrix,m,E,S] = my_code2(10000);
 me = mean(S);
 sd = sqrt(var(S));
 
