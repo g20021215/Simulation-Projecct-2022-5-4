@@ -148,7 +148,7 @@ pd = makedist('Exponential');
 %pd = makedist('Normal')
 qqplot(S,pd);
 ```
-![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQ%20plot%20Method1.png)
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQ%20plot%20Method1%20.png)
 ## Part b:
 
 ### Method 2:Queueing Theory
