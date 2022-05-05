@@ -176,42 +176,43 @@ clc
 clear
 for i = 1:2
     %*****************************************
-    %初始化顾客源
+    %Initialize customer source
     %*****************************************
-    %总仿真时间
+    %total simulating time
     Total_time = 2;
-    %队列最大长度
+    %maximum length of queuing
     N = 10000000000;
-    %到达率与服务率
+    %rate of arrival and service到达率与服务率
     lambda = 60;
     mu = 60;
-    %平均到达时间与平均服务时间
+    %average arrive time poing and the average serve time平均到达时间与平均服务时间
     arr_mean = 1/lambda;
     ser_mean = 1/mu;
     arr_num = length(pois(Total_time,lambda));
     %arr_num = round(Total_time*lambda*1);
     events = [];
-    %产生各顾客达到时间间隔
+    %generate the time interval between any two adjecent customers产生各顾客达到时间间隔
     events(1,:) = exprnd(arr_mean,1,arr_num); + normrnd(8/60,2/60,arr_num,1);
+    %the accumulated sum of all the previous time interval is the time point when the customer arrive
     %各顾客的到达时刻等于时间间隔的累积和 （到达时间）
     events(1,:) = cumsum(events(1,:));
-    %产生各顾客服务时间(停留时间）
+    %sojorn time for all the customers. 产生各顾客服务时间(停留时间）
     events(2,:) = exprnd(ser_mean,1,arr_num);
-    %计算仿真顾客个数，即到达时刻在仿真时间内的顾客数
+    %calculate the total number of all the customer. This is same as the number of cumstomers arrive in the simulated interval计算仿真顾客个数，即到达时刻在仿真时间内的顾客数
     len_sim = sum(events(1,:)<= Total_time);
     %*****************************************
-    %计算第 1个顾客的信息
+    %record the information of the first customer 计算第 1个顾客的信息
     %*****************************************
-    %第 1个顾客进入系统后直接接受服务，无需等待
+    %no waiting time for the first customer.第 1个顾客进入系统后直接接受服务，无需等待
     events(3,1) = 0;
-    %其离开时刻等于其到达时刻与服务时间之和
+    %its leaving time is equal to the sum of the 其离开时刻等于其到达时刻与服务时间之和
     events(4,1) = events(1,1)+events(2,1);
-    %其肯定被系统接纳，此时系统内共有1个顾客，故标志位置1
+    %The first customer was taken in, and the total number of people in the system is 1.其肯定被系统接纳，此时系统内共有1个顾客，故标志位置1
     events(5,1) = 1;
-    %其进入系统后，系统内已有成员序号为 1
+    %we number this customer to be 1.其进入系统后，系统内已有成员序号为 1
     member = [1];
     for i = 2:arr_num
-        %如果第 i个顾客的到达时间超过了仿真时间，则跳出循环
+        %If i^th customer arrive time is geq than the sumulated time, then break.如果第 i个顾客的到达时间超过了仿真时间，则跳出循环
         
         if events(1,i)>Total_time
             
@@ -219,7 +220,7 @@ for i = 1:2
             
         else
             number = sum(events(4,member) > events(1,i));
-            %如果系统已满，则系统拒绝第 i个顾客，其标志位置 0
+            %If the cashier system is full, then reject ith customer, and mark it to be zero如果系统已满，则系统拒绝第 i个顾客，其标志位置 0
             if number >= N+1
                 events(5,i) = 0;
                 %如果系统为空，则第 i个顾客直接接受服务
