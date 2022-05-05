@@ -51,8 +51,10 @@ Date:2022/5/4
 ## Method 1: Ordinary Method
 ### Part a (Method 1)
 In this method, we will use the <b> Queueing System with Two Parallel Servers </b> to solve this problem.
-First, we need to generate the arrive time <font color=Blue> ta </font>   <font color="Blue">Test</font>   
-<span style=background:#FF0000>Test</span>
+
+First, we need to generate the arrive time `ta` from poisson process with rate 120 per hour and generate sojourn time `tc`~<b>N(8,2)</b> (minutes). 
+
+Then, we put the arrive time `ta` and sojurn time `tc` as the first and second column of the matrix, and the third column is `ta + tc` in matrix `Time_matrix`
 #### Algorithm
 
 #### Code:
@@ -170,10 +172,11 @@ for j=1:N
     E_times(j) = sum(sum(Result_matrix(:,2:3)))/n;
     i_matrix(j) = n;
 %% Part b
-    Set = Result_matrix(:,4);
-    Set(all(~Set,2),:) = [];% Delete all the zero items here
-    S = [S;Set];
-    Set = [];
+     Set = Result_matrix(:,4);
+     Set(all(~Set,2),:) = [];% Delete all the zero items here
+     S = [S;Set];
+     Set = [];
+
 end
 m = mean(i_matrix);
 E = mean(E_times);
