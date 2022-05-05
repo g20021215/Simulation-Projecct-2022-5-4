@@ -1,4 +1,4 @@
-function [Result_matrix,m,E,S] = me_code2(N)
+function [Result_matrix,m,E,S] = my_code2(N)
 % m is the average number of people in each iterations.
 % Result_matrix is the simulated result in every iteration.
 i_matrix = zeros(1,N);
