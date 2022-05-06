@@ -54,7 +54,9 @@ In this method, we will use the <b> Queueing System with Two Parallel Servers </
 
 First, we need to generate the arrive time `ta` from poisson process with rate 120 per hour and generate sojourn time `tc`~<b>N(8,2)</b> (minutes). 
 
-Then, we put the arrive time `ta` and sojurn time `tc` as the first and second column of the matrix, and the third column is `ta + tc` in matrix `Time_matrix`
+Then, we put the arrive time `ta` and sojurn time `tc` as the first and second column of the matrix, and the third column is `ta + tc` in matrix `Time_matrix`.
+
+Now, we will find the simulated process. We firstly set the `flag = [1 1];` that means there are two 'serves' (Cashiers) are available. Then, we can set the paying time which are randomly generated from <b> Exp(1) </b>. Then, start the loop and getting the paying time during this process. If the total time before the step paying is greater than the previous minimum time they paying time, the waiting time should be zero. And in other case, the waiting time arrises. The waiting time should be the subtraction time point of the previous customer finish paying and this customer is ready to start the paying activity. During this process, we need to minus the waiting time from the maximum serve time of the other cashier. Then we iteration and get the result.
 #### Algorithm
 
 #### Code:
