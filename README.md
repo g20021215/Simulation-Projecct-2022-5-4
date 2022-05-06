@@ -20,13 +20,13 @@ Date:2022/5/4
   
 
   ## Method 2: Queueing theorem
-  ### Part a & b (Method 2)
+  ### Part a
   #### Algorithm 陈郅涵
   #### Code 叶中宇
  
 
   #### Flow diagram 王一安
-  #### Simulation result 李文锐
+  #### Simulation Conclusion 李文锐
   #### Testing for the distribution
   ## Relevant material
 
