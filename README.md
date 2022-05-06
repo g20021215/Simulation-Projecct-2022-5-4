@@ -12,23 +12,21 @@ Date:2022/5/4
 <br />
 
 # Content:
-  ## Introduction
-  ## Method 1: ordinary method
+  ## Introduction 陈俊霖
+  ## Method 1: ordinary method 
   ### Part a (Method 1)
-  #### Algorithm
-  #### Code
+  #### Algorithm 施金泽
+  #### Code 邹宜轩
   
-  ### Part b (Method 1)
-  #### Flow diagram
-  #### Testing for the distribution
-  
-  
+
   ## Method 2: Queueing theorem
   ### Part a & b (Method 2)
-  #### Algorithm
-  #### Code
-  #### Simulation result:
-  #### Flow diagram
+  #### Algorithm 陈郅涵
+  #### Code 叶中宇
+ 
+
+  #### Flow diagram 王一安
+  #### Simulation result 李文锐
   #### Testing for the distribution
   ## Relevant material
 
