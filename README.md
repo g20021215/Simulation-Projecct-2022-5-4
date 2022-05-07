@@ -43,6 +43,7 @@ Date:2022/5/4
 
 <br />
 ## Algorithm in the textbook P118:
+
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
   
