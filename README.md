@@ -45,7 +45,7 @@ Date:2022/5/4
 ## Algorithm in the textbook P118:
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
-
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
 ## Method 1: Ordinary Method
 ### Part a (Method 1)
 In this method, we will use the <b> Queueing System with Two Parallel Servers </b> to solve this problem.
