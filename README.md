@@ -80,7 +80,7 @@ Where tA is the time of the nexxt arrival, and ti is the service completion time
   To update the system, we move along in time until we encounter the next event. In the following cases, `Yi` always refers to a random variable having distribution ` G1 `,i = 1,2.
 
 ``` 
-Case 1<b/><b/> `SS= (n, i1, i2)` and `tA = min(tA, t1, t2)`
+Case 1: SS= (n, i1, i2) and tA = min(tA, t1, t2)
     
     Reset t = tA
     Reset Na = Na + 1
@@ -88,17 +88,14 @@ Case 1<b/><b/> `SS= (n, i1, i2)` and `tA = min(tA, t1, t2)`
     Collect the output data A(Na) = t
   
   If SS = (0):
-  
     Reset SS=(1,Na,0)
     Generate Y2 and reset t2 = t + Y2
   
   If SS = (1,j,0):
-  
     Reset: SS=(2, j, Na)
     Generate Y2 and reset t2 = t + Y2
   
   If SS = (1, 0, j)
-  
   Reset SS = (2, Na, j)
   Generate Y1 and reset t1 = t + Y1
   
@@ -112,9 +109,33 @@ Case 2: SS = (n, i1, i2) and t1 < tA, t1<= t2
     Collect the output data D(i1) = t
   
   If n = 1:
-  
     Reset SS = (0)
     Reset t1 = Inf
+  
+  If n = 2:
+    Reset SS = (1, 0, i2)
+    Reset t1 = Inf
+  
+  If n > 2: Let m = max(t1, t2) and
+    Reset SS = (n-1, m+1, i2)
+    Generate Y1 and reset t1 = t + Y1
+  
+Case 3: SS = (n, i1, i2) and t2 < tA, t2 < t1
+    Reset t = t2
+    Reset C2 = C2 + 1
+    Collect the output D(i2) = t
+  
+  If n = 1:
+    Reset SS = (0)
+    Reset t1 = Inf
+  
+  If n = 2:
+    Reset SS = (1, i1, 0)
+    Reset t2 = Inf
+  
+  If n > 2: let m = max(i1, i2)
+    Reset SS = (n-1, i1, m+1)
+    Generate Y2 and reset t2 = t + Y2
 ```    
 
   
