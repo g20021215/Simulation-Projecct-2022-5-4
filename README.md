@@ -13,7 +13,7 @@ Date:2022/5/4
 
 # Content:
   ## Introduction 陈俊霖
-  ## Method 1: ordinary method 
+  ## Method 1: Textbook Method:
   ### Part a (Method 1)
   #### Algorithm 施金泽
   #### Code 邹宜轩
@@ -42,8 +42,40 @@ Date:2022/5/4
 
 
 <br />
+
 ## Algorithm in the textbook P118:
 
+<b> Time Variable <b/> t
+  
+<b> System State Variable (`SS`)<b/>
+  
+(n, i1, i2) if there are n customers in the system, i1 is with serve 1 and i_2 is with server 2. Note that <b> SS <b/> = (0) when the only system is empty, and <b> SS <b/>= (i, j, 0) or (i, 0, j) when the only customers is j and he is being served by server i ir server 2, respectively.
+  
+<b>Counter Variables<b/>
+  
+`Na`: the number of customers arrived by time t.
+  
+`Cj`: the number of customers served by j, j = 1,2, by time t.
+  
+<b>Output Variables<b/>
+  
+`A(n)`: the arrive time (before going to the cashier) of customer n, n >= 1
+  
+`D(n)`: the departure time of customer n, n >= 1.
+  
+<b>Event time tA, t1, t2<b/>
+  
+Where tA is the time of the nexxt arrival, and ti is the service completion time of the customer presently being served by server i, i = 1,2. If there is no customer presently with server i, then we set ti = Inf,i = 1,2. In the following. the event list will always consist of the three variables tA, t1, t2.
+
+<b>Initialize<b/>
+  
+  set t = Na = C1 = C2 = 0
+  
+  Set <b>SS<b/> = (0).
+  
+  Generate `T0` and set `tA` = `T0`, t1 = t2 = Inf
+  
+  To Update
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
   
