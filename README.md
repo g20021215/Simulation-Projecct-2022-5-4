@@ -88,7 +88,7 @@ Where tA is the time of the nexxt arrival, and ti is the service completion time
       
     Generate `Tt` and reset `tA = Tt`
     
-     <pre/>
+     </pre>
   
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
