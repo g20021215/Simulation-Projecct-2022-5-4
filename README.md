@@ -81,14 +81,14 @@ Where tA is the time of the nexxt arrival, and ti is the service completion time
   
   <b><b> Case 1<b/><b/> `SS= (n, i1, i2)` and `tA = min(tA, t1, t2)`
     
-    <Pre>
+    <pre>
     Reset `t = tA`
       
     Reset `Na = Na + 1`
       
     Generate `Tt` and reset `tA = Tt`
     
-     <Pre/>
+     <pre/>
   
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
