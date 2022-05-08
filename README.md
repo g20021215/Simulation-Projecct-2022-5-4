@@ -78,16 +78,44 @@ Where tA is the time of the nexxt arrival, and ti is the service completion time
   
   <br/>
   To update the system, we move along in time until we encounter the next event. In the following cases, `Yi` always refers to a random variable having distribution ` G1 `,i = 1,2.
-  
-  <b><b> Case 1<b/><b/> `SS= (n, i1, i2)` and `tA = min(tA, t1, t2)`
-    
 
-    &nbsp;&nbsp;Reset `t = tA`
-      
-    &nbsp;&nbsp;Reset `Na = Na + 1`
-      
-    &nbsp;&nbsp;Generate `Tt` and reset `tA = Tt`
+``` 
+Case 1<b/><b/> `SS= (n, i1, i2)` and `tA = min(tA, t1, t2)`
     
+    Reset t = tA
+    Reset Na = Na + 1
+    Generate Tt and reset tA = Tt
+    Collect the output data A(Na) = t
+  
+  If SS = (0):
+  
+    Reset SS=(1,Na,0)
+    Generate Y2 and reset t2 = t + Y2
+  
+  If SS = (1,j,0):
+  
+    Reset: SS=(2, j, Na)
+    Generate Y2 and reset t2 = t + Y2
+  
+  If SS = (1, 0, j)
+  
+  Reset SS = (2, Na, j)
+  Generate Y1 and reset t1 = t + Y1
+  
+  If n > 1:
+   Reset SS = (n+1, i1, i2)
+  
+Case 2: SS = (n, i1, i2) and t1 < tA, t1<= t2
+  
+    Reset t = t1
+    Reset C1 = C1 + 1
+    Collect the output data D(i1) = t
+  
+  If n = 1:
+  
+    Reset SS = (0)
+    Reset t1 = Inf
+```    
 
   
 ## Introduction：
