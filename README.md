@@ -74,8 +74,21 @@ Where tA is the time of the nexxt arrival, and ti is the service completion time
   Set <b>SS<b/> = (0).
   
   Generate `T0` and set `tA` = `T0`, t1 = t2 = Inf
+  <br>
   
-  To Update
+  <br/>
+  To update the system, we move along in time until we encounter the next event. In the following cases, `Yi` always refers to a random variable having distribution ` G1 `,i = 1,2.
+  
+  <b><b> Case 1<b/><b/> `SS= (n, i1, i2)` and `tA = min(tA, t1, t2)`
+    
+    <Pre>    <Pre> Reset `t = tA`
+      
+    <Pre>    <Pre> Reset `Na = Na + 1`
+      
+    <Pre>    <Pre> Generate `Tt` and reset `tA = Tt`
+    
+    <Pre>    <Pre>
+  
 ## Introduction：
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
   
