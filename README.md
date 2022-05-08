@@ -43,6 +43,16 @@ Date:2022/5/4
 
 <br />
 
+
+
+  
+## Introduction：
+  In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
+  
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
+
+## Method 1: Ordinary Method
+
 ## Algorithm in the textbook P118:
 
 <b> Time Variable <b/> t
@@ -137,14 +147,8 @@ Case 3: SS = (n, i1, i2) and t2 < tA, t2 < t1
     Reset SS = (n-1, i1, m+1)
     Generate Y2 and reset t2 = t + Y2
 ```    
-
   
-## Introduction：
-  In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
-  
-![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
 
-## Method 1: Ordinary Method
 ### Part a (Method 1)
 In this method, we will use the <b> Queueing System with Two Parallel Servers </b> to solve this problem.
 
