@@ -270,6 +270,7 @@ Result_matrix =
    60.0944    7.6618    0.7441  117.3991
    61.3184    7.4371    0.4096  117.8203
 '''
+  
 Part B QQ plot:
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
