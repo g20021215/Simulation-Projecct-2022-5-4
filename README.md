@@ -150,7 +150,7 @@ Case 3: SS = (n, i1, i2) and t2 < tA, t2 < t1
   
 Running Result: 
   
-'''matlab
+'''
   
     Arriving Time         Sojourn Time            Waiting Time          Departure Time
     0.5559    5.5801    0.5026    6.6386              12.7468    5.1127    0.5667   30.9084               20.9992   11.1573    1.1720   62.0125             41.1605    7.9404    0.2160   88.7936             55.3877    8.1817    0.7583  112.9045
