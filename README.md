@@ -147,10 +147,8 @@ Case 3: SS = (n, i1, i2) and t2 < tA, t2 < t1
     Reset SS = (n-1, i1, m+1)
     Generate Y2 and reset t2 = t + Y2
 ```    
-Running Result:
+Running Result: Arriving Time         Sojourn Time            Waiting Time          Departure Time
 '''matlab
-  
-Result_matrix =
 
     0.5559    5.5801    0.5026    6.6386              12.7468    5.1127    0.5667   30.9084               20.9992   11.1573    1.1720   62.0125             41.1605    7.9404    0.2160   88.7936             55.3877    8.1817    0.7583  112.9045
     3.4072    3.3275    2.7062    8.8422              10.0947    8.1081    0.7066   33.7468               27.5962    5.4440    0.3177   63.8871             40.4669    9.7611    1.0693   89.9610             58.4117    5.7263    0.2996  112.7756        
