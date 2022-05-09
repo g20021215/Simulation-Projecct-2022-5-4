@@ -17,17 +17,14 @@ Date:2022/5/4
   ### Part a (Method 1)
   #### Algorithm 施金泽
   #### Code 邹宜轩
-  
-
-  ## Method 2: Queueing theorem
-  ### Part a
-  #### Algorithm 陈郅涵
-  #### Code 叶中宇
- 
-
+  ### Part b (Method 1)
   #### Flow diagram 王一安
   #### Simulation Conclusion 李文锐
   #### Testing for the distribution
+  ## Method 2: Queueing theorem(更改为讲算法以及相关理论的证明)
+  ### Part a
+  #### Algorithm1 陈郅涵
+  #### Algorithm2 叶中宇
   ## Relevant material
 
 <br> 
