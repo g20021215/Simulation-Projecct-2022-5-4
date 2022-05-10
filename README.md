@@ -310,7 +310,7 @@ Part B QQ plot:
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
-[Intro.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
+[QUEUE.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
   
 ## Relevant Materials:
 
