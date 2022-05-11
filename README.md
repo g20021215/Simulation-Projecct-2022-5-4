@@ -25,7 +25,11 @@ Date:2022/5/4
 
 # Content:
   ## Introduction 陈俊霖
-  ## Method 1: Textbook Method:
+  ## Lecture Part 1: Queueing theorem(更改为讲算法以及相关理论的证明)
+  ### Part a
+  #### Algorithm1 陈郅涵
+  #### Algorithm2 叶中宇
+  ## Lecture Part 2: Textbook Method (Solution):
   ### Part a (Method 1)
   #### Algorithm 施金泽
   #### Code 邹宜轩
@@ -33,10 +37,6 @@ Date:2022/5/4
   #### Flow diagram 王一安
   #### Simulation Conclusion 李文锐
   #### Testing for the distribution
-  ## Method 2: Queueing theorem(更改为讲算法以及相关理论的证明)
-  ### Part a
-  #### Algorithm1 陈郅涵
-  #### Algorithm2 叶中宇
   ## Relevant material
 
 <br> 
