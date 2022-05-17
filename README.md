@@ -310,8 +310,15 @@ Running Result:
     9.5502    7.7028    0.1354   28.7250              24.4948    7.6081    0.8062   60.5824               38.8898   10.0826    1.7506   88.8575             53.5688    7.8622    0.3607  112.0587
 
   ```
+Part A (b):
+   PS: The time of waiting line doesn't contain the serving time. That means `Time of waiting line = Sojourn Time + Waiting Time`
+  
+  ```matlab
+  
+  ```
   
 Part B QQ plot: Testing the waiting time
+
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
