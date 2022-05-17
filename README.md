@@ -327,7 +327,20 @@ Result_matrix
 Waiting_line_time = sum(Result_matrix(:,2)+Result_matrix(:,3))/length(Result_matrix(:,2))
   ```
 Part B QQ plot: Testing the waiting time
-
+    Run the code in part A for N times and get the waiting time.
+ ```matlab
+  for i=1:N
+    [A,D,Time_matrix] = Method_Textbook(1);
+    tw = D-A(1,1:length(D));
+    
+    %me = mean(S);
+    %sd = sqrt(var(S));
+    S = [S;tw'];
+end
+pd = makedist('Exponential');
+%pd = makedist('Normal')
+qqplot(S,pd);
+  ```
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
