@@ -311,7 +311,7 @@ Running Result:
 
   ```
   
-Part B QQ plot:
+Part B QQ plot: Testing the waiting time
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
