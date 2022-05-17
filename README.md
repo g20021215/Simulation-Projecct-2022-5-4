@@ -25,7 +25,7 @@ Date:2022/5/4
 
 # Content:
   ## Introduction 陈俊霖
-  ## Lecture Part 1: Queueing theorem(更改为讲算法以及相关理论的证明)
+  ## Lecture Part 1: Queuing theorem(更改为讲算法以及相关理论的证明)
   ### Part a
   #### Algorithm1 陈郅涵
   #### Algorithm2 叶中宇
@@ -59,8 +59,13 @@ Date:2022/5/4
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
+## Lecture Part 1: Queuing theorem
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.1.jpg)
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.2.jpeg)
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.3.jpeg)
+[QUEUE.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
+## Lecture Part 2: Textbook Method
 
-## Method 1: Ordinary Method
 
 ## Algorithm in the textbook P118:
 
@@ -310,7 +315,7 @@ Part B QQ plot:
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
-[QUEUE.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
+
   
 ## Relevant Materials:
 
