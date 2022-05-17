@@ -312,22 +312,27 @@ Running Result:
 
   ```
 Part A (b):
-   PS: The time of waiting line doesn't contain the serving time. That means `Time of waiting line = Sojourn Time + Waiting Time`
-  First ,we need to make the code in PartA(a) into a function. And we need to
+PS: The time of waiting line doesn't contain the serving time. That means `Time of waiting line = Sojourn Time + Waiting Time`
+
+First ,we need to make the code in PartA(a) into a function. And we need to
   ```matlab
   function [A, D,Time_matrix] = Method_Textbook(N) 
   ```
+
   And then, calculate the cummulated sum of the 2nd and 3rd colmum
-  ```matlab
+  
+```matlab
 N = 1000;
 S = [];
 [A,D,Time_matrix] = Method_Textbook(1);
 Result_matrix = [Time_matrix(1:length(D),1),Time_matrix(1:length(D),2),(D-A(1,1:length(D)))',D'];
 Result_matrix
 Waiting_line_time = sum(Result_matrix(:,2)+Result_matrix(:,3))/length(Result_matrix(:,2))
-  ```
+```
 Part B QQ plot: Testing the waiting time
-    Run the code in part A for N times and get the waiting time.
+  
+Run the code in part A for N times and get the waiting time.
+
  ```matlab
   for i=1:N
     [A,D,Time_matrix] = Method_Textbook(1);
@@ -340,8 +345,8 @@ end
 pd = makedist('Exponential');
 %pd = makedist('Normal')
 qqplot(S,pd);
-  ```
-  
+```
+
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QQplot_method_textbook.png)
   
 
