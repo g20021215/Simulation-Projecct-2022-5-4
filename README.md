@@ -163,7 +163,7 @@ Case 3: SS = (n, i1, i2) and t2 < tA, t2 < t1
 ``` 
 Part A (a)
 ```matlab 
-  
+
 lam1=2;% Use it in minutes
 mu=8;
 std=2;
@@ -204,6 +204,7 @@ Time_matrix = sortrows(Time_matrix,3);% re-arrange the matrix by the 1st rows,
 
 
 %%Initialize the state:
+
 t = 0;Na = 1;C1 = 0;C2 = 0;
 %SS = [n,i1,i2];
 T = 120;
@@ -312,11 +313,19 @@ Running Result:
   ```
 Part A (b):
    PS: The time of waiting line doesn't contain the serving time. That means `Time of waiting line = Sojourn Time + Waiting Time`
-  
+  First ,we need to make the code in PartA(a) into a function. And we need to
   ```matlab
-  
+  function [A, D,Time_matrix] = Method_Textbook(N) 
   ```
-  
+  And then, calculate the cummulated sum of the 2nd and 3rd colmum
+  ```matlab
+N = 1000;
+S = [];
+[A,D,Time_matrix] = Method_Textbook(1);
+Result_matrix = [Time_matrix(1:length(D),1),Time_matrix(1:length(D),2),(D-A(1,1:length(D)))',D'];
+Result_matrix
+Waiting_line_time = sum(Result_matrix(:,2)+Result_matrix(:,3))/length(Result_matrix(:,2))
+  ```
 Part B QQ plot: Testing the waiting time
 
   
