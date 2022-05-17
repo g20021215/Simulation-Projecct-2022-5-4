@@ -60,9 +60,9 @@ Date:2022/5/4
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
 ## Lecture Part 1: Queuing theorem
-![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.1.jpg)
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.2.jpeg)
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.3.jpeg)
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.1.jpg)
 [QUEUE.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
 ## Lecture Part 2: Textbook Method
 
