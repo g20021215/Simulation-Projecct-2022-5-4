@@ -369,7 +369,7 @@ qqplot(S,pd);
 
 Flow Diagram:
 
-    By using the thorem, we can find that the ...... is 
+By using the thorem, we can find that the ...... is 
     
 ## Relevant Materials:
     
