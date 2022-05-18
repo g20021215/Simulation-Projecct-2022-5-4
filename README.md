@@ -343,7 +343,7 @@ We get the average time of Time of waiting line is
   
   
   
-## Part B: 王一安
+## Part B: 李文锐
 QQ plot: Testing the distribution of waiting time
   
 Run the code in part A for N times and get the waiting time.
@@ -376,7 +376,7 @@ Flow Diagram:
 
 By using the thorem, we can find that the ...... is 
     
-## Result: 李文锐
+## 王一安替补
     
 ## Relevant Materials:
     
