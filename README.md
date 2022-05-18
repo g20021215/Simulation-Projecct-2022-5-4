@@ -336,7 +336,7 @@ We get the average time of Time of waiting line is
   
   
   
-  <\br>
+  <br/>
   
   
   
