@@ -55,7 +55,7 @@ Date:2022/5/4
 
 
   
-## Introduction：
+## Introduction：陈俊霖
   In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
@@ -64,10 +64,11 @@ Date:2022/5/4
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.3.jpeg)
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.1.jpg)
 [QUEUE.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
-## Lecture Part 2: Textbook Method(Algorithm + Code):
+
+## Lecture Part 2: Textbook Method：Algorithm 施金泽 + Code 邹宜轩
 PartA(a)
 
-## Algorithm in the textbook P118:
+## Algorithm in the textbook P118:施金泽
 
 <b> Time Variable <b/> t
   
@@ -161,7 +162,8 @@ Case 3: SS = (n, i1, i2) and t2 < tA, t2 < t1
     Reset SS = (n-1, i1, m+1)
     Generate Y2 and reset t2 = t + Y2
 ``` 
-Part A (a)
+
+## Part A (a) Code:邹宜轩
 ```matlab 
 
 lam1=2;% Use it in minutes
@@ -311,7 +313,7 @@ Running Result:
     9.5502    7.7028    0.1354   28.7250              24.4948    7.6081    0.8062   60.5824               38.8898   10.0826    1.7506   88.8575             53.5688    7.8622    0.3607  112.0587
 
   ```
-Part A (b):
+## Part A (b): 演讲者待定 
 PS: The time of waiting line doesn't contain the serving time. That means `Time of waiting line = Sojourn Time + Waiting Time`
 
 First ,we need to make the code in PartA(a) into a function. And we need to
@@ -341,7 +343,8 @@ We get the average time of Time of waiting line is
   
   
   
-Part B QQ plot: Testing the waiting time
+## Part B: 王一安
+QQ plot: Testing the distribution of waiting time
   
 Run the code in part A for N times and get the waiting time.
 
@@ -372,6 +375,8 @@ Flow Diagram:
 ![image]()
 
 By using the thorem, we can find that the ...... is 
+    
+## Result: 李文锐
     
 ## Relevant Materials:
     
