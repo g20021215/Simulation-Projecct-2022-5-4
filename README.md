@@ -33,10 +33,11 @@ Date:2022/5/4
   #### Algorithm 施金泽
   #### Code 邹宜轩
   #### Part a(b) 叶中宇
-  ### Part b:
-  #### Flow diagram 王一安
-  #### Simulation Conclusion 李文锐
+  ### Part b:李文锐
+  #### Flow diagram
+  #### Simulation Conclusion 
   #### Testing for the distribution
+  ### 王一安替补
   ## Relevant material
 
 <br> 
