@@ -367,7 +367,7 @@ qqplot(S,pd);
   
 ### The Real Condition in Oasis:
   <center class="half">
-    <img src="https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/oasis.jpg" width="500"/><img src="https://img-blog.csdn.net/20180612152032532?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIxODA4OTYx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="500"/><center>  
+    <img src="https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/oasis.jpg" width="500"/><img src="https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Happy_meal_time.jpg" width="500"/><center>  
     
   Since the Oasis has already close down, we have no choice but to do the investegate on the New canteen there. 
 
