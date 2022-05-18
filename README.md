@@ -369,7 +369,7 @@ qqplot(S,pd);
 
 Flow Diagram:  
     
-    ![image]()
+![image]()
 
 By using the thorem, we can find that the ...... is 
     
