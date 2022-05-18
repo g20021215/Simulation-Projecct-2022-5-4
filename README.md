@@ -372,7 +372,7 @@ qqplot(S,pd);
 
 Flow Diagram:  
     
-![image]()
+![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/flow diagram.jpg)
 
 By using the thorem, we can find that the ...... is 
     
