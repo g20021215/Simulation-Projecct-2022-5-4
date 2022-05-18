@@ -352,4 +352,4 @@ qqplot(S,pd);
 
   
 ## Relevant Materials:
-
+https://minkhollow.ca/books/?page_id=34 
