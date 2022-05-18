@@ -368,10 +368,9 @@ qqplot(S,pd);
   Since the Oasis has already close down, we have no choice but to do the investegate on the New canteen there. 
 
 Flow Diagram:
-    
+
     By using the thorem, we can find that the ...... is 
     
-
 ## Relevant Materials:
     
 https://minkhollow.ca/books/?page_id=34 
