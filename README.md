@@ -64,8 +64,8 @@ Date:2022/5/4
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.3.jpeg)
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/C1.1.jpg)
 [QUEUE.pdf](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/QUEUE.pdf)
-## Lecture Part 2: Textbook Method
-
+## Lecture Part 2: Textbook Method(Algorithm + Code):
+PartA(a)
 
 ## Algorithm in the textbook P118:
 
@@ -319,7 +319,7 @@ First ,we need to make the code in PartA(a) into a function. And we need to
   function [A, D,Time_matrix] = Method_Textbook(N) 
   ```
 
-  And then, calculate the cummulated sum of the 2nd and 3rd colmum
+  And then, calculate the cummulated sum of the 2nd and 3rd colmum: 
   
 ```matlab
 N = 1000;
@@ -328,7 +328,19 @@ S = [];
 Result_matrix = [Time_matrix(1:length(D),1),Time_matrix(1:length(D),2),(D-A(1,1:length(D)))',D'];
 Result_matrix
 Waiting_line_time = sum(Result_matrix(:,2)+Result_matrix(:,3))/length(Result_matrix(:,2))
-```
+``` 
+We get the average time of Time of waiting line is 
+  
+  ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/PartA(b).png)
+  <br>
+  
+  
+  
+  <\br>
+  
+  
+  
+  
 Part B QQ plot: Testing the waiting time
   
 Run the code in part A for N times and get the waiting time.
@@ -355,7 +367,13 @@ qqplot(S,pd);
     
   Since the Oasis has already close down, we have no choice but to do the investegate on the New canteen there. 
 
-  
+Flow Diagram:
+    
+    By using the thorem, we can find that the ...... is 
+    
+
 ## Relevant Materials:
+    
 https://minkhollow.ca/books/?page_id=34 
+
 http://www.columbia.edu/~ks20/4404-Sigman/4404-Notes-SSQ.pdf
