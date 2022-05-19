@@ -37,7 +37,7 @@ Date:2022/5/4
   #### Flow diagram
   #### Simulation Conclusion 
   #### Testing for the distribution
-  ### 替补王一安
+  ### 替补:王一安
   ## Relevant material
 
 <br> 
