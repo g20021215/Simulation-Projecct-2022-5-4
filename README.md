@@ -314,7 +314,7 @@ Running Result:
     9.5502    7.7028    0.1354   28.7250              24.4948    7.6081    0.8062   60.5824               38.8898   10.0826    1.7506   88.8575             53.5688    7.8622    0.3607  112.0587
 
   ```
-## Part A (b): 演讲者待定 
+## Part A (b): 叶中宇
 PS: The time of waiting line doesn't contain the serving time. That means `Time of waiting line = Sojourn Time + Waiting Time`
 
 First ,we need to make the code in PartA(a) into a function. And we need to
