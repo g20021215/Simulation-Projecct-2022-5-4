@@ -57,7 +57,7 @@ Date:2022/5/4
 
   
 ## Introduction：陈俊霖
-  In this preseation, we will give two different method to solve this problem. One is the ordinary method and the other is queuing theorem. Each method will give the detailed process of solving this problem.
+  For the simulation of a parallel cashier queuing system in a restaurant, we will first get the general result for queuing problem by proving some theorems, and on this basis, write the specific algorithm and code for this problem using a method similar to the textbook, and then give the calculation of serving time and QQ plot. Finally, we will give the simulation results and conclusions of oasis restaurant according to our model.
   
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/IMG_20200914_182716.jpg)
 ## Lecture Part 1: Queuing theorem
