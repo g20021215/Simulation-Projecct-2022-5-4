@@ -26,8 +26,7 @@ Date:2022/5/4
 # Content:
   ## Introduction 陈俊霖
   ## Lecture Part 1: Queuing theorem
-  ### Part a
-  #### Queuing Theorem 陈郅涵
+  ### Queuing Theorem 陈郅涵
   ## Lecture Part 2: Textbook Method (Solution):
   ### Part a (a)
   #### Algorithm 施金泽
