@@ -398,3 +398,5 @@ By using the thorem, we can find that the estimated waiting time is `2.849206 mi
 https://minkhollow.ca/books/?page_id=34 
 
 http://www.columbia.edu/~ks20/4404-Sigman/4404-Notes-SSQ.pdf
+    
+[image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Cal.jpg)
