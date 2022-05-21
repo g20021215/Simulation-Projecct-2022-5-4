@@ -368,8 +368,17 @@ qqplot(S,pd);
   <center class="half">
     <img src="https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/oasis.jpg" width="500"/><img src="https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/Happy_meal_time.jpg" width="450"/><center>  
     
-  Since the Oasis has already close down, we have no choice but to do the investegate on the New canteen there. 
-
+Since the Oasis has already close down, we have no choice but to do the investegate on the New canteen there. 
+    
+In this part, we will use the Theorem and assumptions to construct the model in reality. We chose one of the most popular food-selling  window: The Self-select window
+    
+We conducted several times data collecting, and we get the mean of the arriving time rate is . And the rate of waiting time is . During the investigate, we found that althought there are two cashieres, there is only one madam to checkout. And the other counter are rarely used.\\
+Here are the model assumptions:
+    
+[1] The rate of arriving and waiting time are keep constant in the whole period.
+    
+[2] The  other cashier will never be used during the whole period.
+    
 Flow Diagram:  
     
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/flow_diagram.jpg)
