@@ -380,6 +380,7 @@ Here are the model assumptions:
     
 [2] The  other cashier will never be used during the whole period.
 
+[3] The waiting time is expernentially distributed and arriving time is a homogenous possion process. 
 There are Flow Diagram:  
     
 ![image](https://github.com/g20021215/Simulation-Project-2022-5-4/blob/main/flow_diagram.jpg)
