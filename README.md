@@ -74,7 +74,7 @@ PartA(a)
   
 <b> System State Variable (`SS`)<b/>
   
-(n, i1, i2) if there are n customers in the system, i1 is with serve 1 and i_2 is with server 2. Note that <b> SS <b/> = (0) when the only system is empty, and <b> SS <b/>= (i, j, 0) or (i, 0, j) when the only customers is j and he is being served by server i ir server 2, respectively.
+(n, i1, i2) if there are n customers in the system, i1 is with serve 1 and i_2 is with server 2. Note that <b> SS <b/> = (0) when the only system is empty, and <b> SS <b/>= (i, j, 0) or (i, 0, j) when the only customers is j and he is being served by server i or server 2, respectively.
   
 <b>Counter Variables<b/>
   
@@ -90,7 +90,7 @@ PartA(a)
   
 <b>Event time tA, t1, t2<b/>
   
-Where tA is the time of the nexxt arrival, and ti is the service completion time of the customer presently being served by server i, i = 1,2. If there is no customer presently with server i, then we set ti = Inf,i = 1,2. In the following. the event list will always consist of the three variables tA, t1, t2.
+Where `tA` is the time of the next arrival, and `ti` is the service completion time of the customer presently being served by server `i`, `i = 1,2`. If there is no customer presently with server `i`, then we set `ti = Inf,i = 1,2`. In the following. the event list will always consist of the three variables `tA`, `t1`, `t2`.
 
 <b>Initialize<b/>
   
