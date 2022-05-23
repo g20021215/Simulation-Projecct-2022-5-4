@@ -184,7 +184,7 @@ ta;%%print the time of customers' arrival time;
 
 
 
-n=length(ta);%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Here I change n to length(ta),previous is length(ta)-1
+n=length(ta);
 tc=zeros(n:1);
 for i =1:n
     a = normrnd(mu,std);
