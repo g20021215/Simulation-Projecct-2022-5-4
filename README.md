@@ -2,19 +2,19 @@
 # Question 2: Simulation on A Queuing System with Two Parallel
 Group memebers:
 
-陈俊霖（2030005004）  
+陈俊霖  Junlin Chen（2030005004）  
 
-陈郅涵（2030005013） 
+陈郅涵  Zhihan Chen（2030005013） 
 
-李文锐（2030005036） 
+李文锐  Wenrui Li（2030005036） 
 
-施金泽（2030005049） 
+施金泽  Jinze Shi（2030005049） 
 
-王一安（2030005058）
+王一安  Yi'an Wang（2030005058）
 
-叶中宇（2030005069）  
+叶中宇  Zhongyu Ye（2030005069）  
 
-邹宜轩（2030005079）
+邹宜轩  Yixuan Zou（2030005079）
 
 Date:2022/5/4
 
